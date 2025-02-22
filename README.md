@@ -40,6 +40,20 @@ Please replace v1.2 with the version that you intend to use.
 
 ## How do we see the generated reports
 
-The generated PDF report would be available to you in the Github Actions Section of your repository. Once inside the Github Actions section, click on RedCoffee For Github Actions. There you will see the artifactory. Click on the artifactory
-and it will a .zip file. Once unzipped, you will find the PDF Report.
+The generated PDF report would be available to you in the Github Actions Section of your repository. Once inside the Github Actions section, click on the name of the action that you have created. This is usually available in the left side panel. For me, I have named the action as RedCoffee Bot. Hence it is visible to me like this in the following format
+
+![image](https://github.com/user-attachments/assets/981423f6-b2b1-42c3-acf8-929889143b98)
+
+Once inside this, search for the commit message that you provided while creating the commit and click on it. For me, this is the below one
+
+![image](https://github.com/user-attachments/assets/1e82de1e-0cf6-461b-8b24-c11163b51ef6)
+
+Click on this and navigate to artifactory sections. The report would be present there as a .zip file
+
+![image](https://github.com/user-attachments/assets/cc0ae35a-0d91-4e98-885b-6cd6b5472565)
+
+Please unzip the file. The report would be present there in .pdf format
+
+
+
 
