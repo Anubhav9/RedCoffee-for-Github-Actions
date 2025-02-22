@@ -34,6 +34,9 @@ runs:
           SONARQUBE_TOKEN=$(curl -X POST "http://localhost:9000/api/user_tokens/generate" -u "admin:HelloSonarqube9#" -H "Content-Type:application/x-www-form-urlencoded" -d "name=RedCoffeeToken" | jq -r ".token")
           echo "SONARQUBE_TOKEN=$SONARQUBE_TOKEN" >> $GITHUB_ENV
       shell: bash
+    - name: Sleep for 30 seconds
+      run: sleep 30
+      shell: bash
     - name: Run the Sonar Scanner CLI
       run: |
           docker run --rm \
