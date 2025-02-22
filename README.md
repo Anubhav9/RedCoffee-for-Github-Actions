@@ -27,6 +27,17 @@ After some research, I found an old plugin that supported PDF reports, but it ha
 This initially came to me as feature request. Since a lot of teams use Github Actions as CI Pipeline, it made sense to integrate this within the Github Actions block. I wanted to send this PDF report as a Slack message as well,
 however, this has been hit with a roadblock that I'm currently trying to solve.
 
+### How to use RedCoffee for Github Actions ?
+
+Using RedCoffee for Github Actions is very straight-forward. We just need to add the following block of code in the YAML file of our actions template. This is usually present in the .github/workflows directory.
+
+```
+- name: Use RedCoffee for Github Actions
+  uses: Anubhav9/redcoffee-for-github-actions@v1.2
+```
+
+Please replace v1.2 with the version that you intend to use.
+
 ## How do we see the generated reports
 
 The generated PDF report would be available to you in the Github Actions Section of your repository. Once inside the Github Actions section, click on RedCoffee For Github Actions. There you will see the artifactory. Click on the artifactory
