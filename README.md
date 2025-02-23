@@ -33,12 +33,12 @@ Using RedCoffee for Github Actions is very straight-forward. We just need to add
 
 ```
 - name: Use RedCoffee for Github Actions
-  uses: Anubhav9/redcoffee-for-github-actions@v1.2
+  uses: Anubhav9/redcoffee-for-github-actions@v1.4
 ```
 
-Please replace v1.2 with the version that you intend to use.
+Please replace v1.4 with the version that you intend to use. v1.4 is the latest / LTS version currently. I will keep updating the version in the command present in this doc with the latest versions as and when they release.
 
-## How do we see the generated reports
+### How do we see the generated reports
 
 The generated PDF report would be available to you in the Github Actions Section of your repository. Once inside the Github Actions section, click on the name of the action that you have created. This is usually available in the left side panel. For me, I have named the action as RedCoffee Bot. Hence it is visible to me like this in the following format
 
@@ -55,5 +55,15 @@ Click on this and navigate to artifactory sections. The report would be present 
 Please unzip the file. The report would be present there in .pdf format
 
 
+### Disclaimer
 
+I've tested this project for Python and JavaScript Ecosystems only. I'm currently working on making this compatible with Java ( since for Java Proejcts , we would need to trigger the build command before running the SonarQube Analysis ) . Go would be followed later.
+
+### Whom to reach out to in case of Queries ?
+
+Please feel free to open a Github Issue in case of any troubles or challenges. Alternatively, you can also reach out to me via [Linkedin](https://www.linkedin.com/in/anubhav-sanyal/)
+
+### A Last Request
+
+In case you find this project useful, I would really really appreciate if you please star this repo. This would help it to reach to a wider audience.
 
