@@ -48,7 +48,7 @@ runs:
             -Dsonar.sources=.
       shell: bash
     - name: Install RedCoffee
-      run: pip install redcoffee==2.3
+      run: pip install redcoffee==2.4
       shell: bash
     - name: Generate the PDF Report
       run: redcoffee generatepdf --host="localhost:9000" --project=${{ github.event.repository.name }} --path=report.pdf --token=${{ env.SONARQUBE_TOKEN }}
